@@ -1,0 +1,28 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "make all",
+    "start": "npm run build && npm run server",
+    "server": "./node_modules/.bin/http-server ./docs -p 3000 -a localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Learn-by-doing/admin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Learn-by-doing/admin/issues"
+  },
+  "homepage": "https://github.com/Learn-by-doing/admin#readme",
+  "dependencies": {
+    "http-server": "0.11.1",
+    "open-sans-fontface": "https://github.com/samotari/open-sans/archive/1.4.2.tar.gz"
+  }
+}
