@@ -1,0 +1,251 @@
+body, html {
+	font-family: 'OpenSans';
+}
+.reveal section {
+	text-align: left;
+}
+.reveal section.center {
+	text-align: center;
+}
+.reveal section img {
+	display: block;
+	background: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+.reveal ul + img,
+.reveal p + img {
+	margin-top: 20px;
+}
+.reveal section:first-child,
+.reveal section:last-child,
+.reveal section#connect {
+	text-align: center;
+}
+.reveal section:first-child img,
+.reveal section:last-child img {
+	margin: 0 auto;
+}
+.reveal section:last-child img {
+	background: #fff;
+	padding: 10px;
+}
+.reveal section:last-child p {
+	font-size: 0.6em;
+	font-weight: 100;
+}
+.reveal h1 {
+	font-size: 5rem;
+}
+.reveal h2 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+.reveal h3 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-top: 20px;
+}
+.reveal ul,
+.reveal ol,
+.reveal p {
+	display: block;
+	font-size: 1.5rem;
+	line-height: 2.8rem;
+}
+.reveal section:first-child p {
+	font-size: 1.8rem;
+	line-height: 3rem;
+}
+.reveal time {
+	display: block;
+	font-size: 1.5rem;
+	font-style: italic;
+	font-weight: 100;
+	margin-top: 20px;
+}
+.reveal .super {
+	font-weight: 100;
+	font-size: .8em;
+	vertical-align: super;
+}
+.reveal .secondary-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.reveal .secondary-image.smaller {
+	max-width: 200px;
+}
+.reveal .secondary-image + ul,
+.reveal .secondary-image + ol,
+.reveal .secondary-image + p {
+	padding-right: 200px;
+}
+.reveal .sub-heading {
+	margin-bottom: 20px;
+}
+.reveal .sub-heading a,
+.reveal .sub-heading time {
+	font-size: 1.3rem;
+}
+.reveal section:first-child .images {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	border-bottom: 3px solid #222;
+	margin-top: 30px;
+}
+.reveal section:first-child .images img {
+	opacity: .7;
+}
+.reveal section:first-child .images img.poppy {
+	float: left;
+}
+.mrprism {
+	position: relative;
+	display: block;
+	width: 51px;
+	height: 47px;
+	background: transparent url('../images/nothing-to-hide--mrprism.png') 0 0 no-repeat;
+}
+.mrprism-eye {
+	position: absolute;
+	left: 17px;
+	bottom: 9px;
+	z-index: 100;
+	width: 10px;
+	height: 10px;
+	transform: translate(-2px,-4px);
+	animation: mrPrismEyeTranslate 15s linear infinite;
+}
+.mrprism-eye:after {
+	position: relative;
+	content: ' ';
+	display: block;
+	width: 10px;
+	height: 10px;
+	transform: rotate(-80deg);
+	animation: mrPrismEyeRotate 15s linear infinite;
+	background: transparent url('../images/nothing-to-hide--mrprism-eye.png') 0 0 no-repeat;
+}
+@keyframes mrPrismEyeTranslate {
+	0% {
+		transform: translate(-1px,-4px);
+	}
+	12% {
+		transform: translate(-5px,-1px);
+	}
+	27% {
+		transform: translate(-6px,1px);
+	}
+	39% {
+		transform: translate(-4px,3px);
+	}
+	54% {
+		transform: translate(-1px,4px);
+	}
+	55% {
+		transform: translate(-6px,0);
+	}
+	62% {
+		transform: translate(-6px,1px);
+	}
+	64% {
+		transform: translate(-6px,-1px);
+	}
+	66% {
+		transform: translate(-6px,1px);
+	}
+	80% {
+		transform: translate(-6px,0);
+	}
+	100% {
+		transform: translate(-1px,-4px);
+	}
+}
+@keyframes mrPrismEyeRotate {
+	0% {
+		transform: rotate(-80deg);
+	}
+	54% {
+		transform: rotate(-225deg);
+	}
+	55% {
+		transform: rotate(-145deg);
+	}
+	62% {
+		transform: rotate(-160deg);
+	}
+	64% {
+		transform: rotate(-130deg);
+	}
+	66% {
+		transform: rotate(-160deg);
+	}
+	70% {
+		transform: rotate(-130deg);
+	}
+	80% {
+		transform: rotate(-145deg);
+	}
+	100% {
+		transform: rotate(-80deg);
+	}
+}
+.reveal section:first-child .images .mrprism {
+	position: absolute;
+	left: 56%;
+	bottom: 16px;
+}
+.reveal section:first-child .images img.desk {
+	float: right;
+}
+.reveal #the-project .mrprism {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.reveal #step-by-step .mrprism {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.reveal #step-by-step .part {
+	position: relative;
+	padding-left: 130px;
+}
+.reveal #step-by-step .part h3 {
+	margin-bottom: 10px;
+}
+.reveal #step-by-step .part p {
+	margin-top: 0;
+}
+.reveal #step-by-step .part + .part {
+	margin-top: 30px;
+}
+.reveal #step-by-step .part:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: ' ';
+	opacity: .4;
+	width: 100px;
+	height: 100px;
+	background-color: transparent;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: 0;
+	box-sizing: border-box;
+}
+.reveal #step-by-step .part.reverse-image-search:before {
+	opacity: .9;
+	background-image: url('../images/image-search.svg');
+}
+.reveal #step-by-step .part.profile-enumeration:before {
+	background-image: url('../images/profile.svg');
+}
+.reveal #step-by-step .part.visual-display:before {
+	background-image: url('../images/display.svg');
+}
