@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Learn-by-doing/admin#readme",
   "dependencies": {
-    "http-server": "0.11.1",
+    "http-server": "0.12.1",
     "open-sans-fontface": "https://github.com/samotari/open-sans/archive/1.4.2.tar.gz"
   }
 }
